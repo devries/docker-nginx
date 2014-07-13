@@ -3,7 +3,7 @@ MAINTAINER Christopher De Vries <devries@idolstarastronomer.com>
 
 RUN apt-get update && apt-get install -y software-properties-common && apt-get clean
 
-RUN add-apt-repository ppa:nginx/stable
+RUN add-apt-repository ppa:nginx/development
 RUN apt-get update && apt-get install -y nginx && apt-get clean
 
 RUN sed "s/access_log\s*[^;]*/access_log \/dev\/stdout/g" -i /etc/nginx/nginx.conf
