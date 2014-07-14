@@ -1,4 +1,4 @@
-# Bottle Base Docker Image
+# Nginx Docker Image
 
 The Dockerfile included in the repository creates an image based on the
 ubuntu14.04 image with nginx installed. 
