@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM ubuntu:16.04
 MAINTAINER Christopher De Vries <devries@idolstarastronomer.com>
 
 RUN apt-get update && apt-get install -y software-properties-common && apt-get clean
