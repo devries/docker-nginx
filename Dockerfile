@@ -15,6 +15,9 @@ RUN sed "s/access_log\s*[^;]*/access_log \/dev\/stdout/g" -i /etc/nginx/nginx.co
 RUN sed "s/error_log\s*[^;]*/error_log \/dev\/stdout/g" -i /etc/nginx/nginx.conf
 RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
+VOLUME /usr/share/nginx/html
+VOLUME /etc/nginx/conf.d
+
 EXPOSE 80
 EXPOSE 443
 
